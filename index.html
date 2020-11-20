@@ -9,18 +9,23 @@
 
 		<!-- you write this -->
 		<script src="world.js" type="text/javascript"></script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
 	</head>
 
 	<body>
 		<header>
+			<img src="earth.jpg">
 			<h1>World Database Lookup</h1>
 		</header>
 
 		<main>
 			<div id="controls">
 				<label for="country">Country:</label>
-				<input id="country" type="search" name="country" placeholder="Enter country name" />
-				<button id="lookup">Lookup</button>
+				<input id="country" type="search" name="country" placeholder="Enter country/city name" /> 
+				<button id="lookup" onclick="findCountry()">Lookup Country</button>
+				<button id="citylookup" onclick="findCity()">Lookup City</button>
 			</div>
 			
 			<div id="result">
